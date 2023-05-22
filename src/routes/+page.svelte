@@ -23,7 +23,7 @@
 </script>
 
 <main
-  class="min-h-screen bg-(color repeat hero-circuit-board-green/5) font-sans antialiased relative overflow-hidden"
+  class="relative min-h-screen overflow-hidden bg-(color repeat hero-circuit-board-green/5) font-sans antialiased"
   on:mousemove={(e) => {
     coords.set({ x: e.clientX, y: e.clientY });
   }}
@@ -34,9 +34,9 @@
     <Socials />
   </div>
   <div
-    class="absolute top-0 left-0 w-full h-full pointer-events-none"
+    class="pointer-events-none absolute left-0 top-0 h-full w-full"
     class:display-none={browser ? window.matchMedia("(any-pointer: coarse)").matches : true}
   >
-    <span class="text-2xl relative" bind:this={pointer}>✨</span>
+    <span class="relative text-2xl" bind:this={pointer}>✨</span>
   </div>
 </main>

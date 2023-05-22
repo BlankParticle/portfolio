@@ -36,18 +36,18 @@
   ];
 </script>
 
-<div class="p-b-2 m-t-4 w-full">
-  <div class="flex justify-center items-center">
-    <hr class="flex-1 mx-1 my-0 text-alt-color/20" />
+<div class="m-t-4 w-full p-b-2">
+  <div class="flex items-center justify-center">
+    <hr class="mx-1 my-0 flex-1 text-alt-color/20" />
     <button
-      class="text-xl font-bold select-none outline-none border-none bg-transparent text-alt-color cursor-pointer font-sans"
+      class="cursor-pointer select-none border-none bg-transparent font-sans text-xl font-bold text-alt-color outline-none"
       on:click={() => {
         socials = socials.reverse();
       }}
     >
       Find Me Here
     </button>
-    <hr class="flex-1 mx-1 my-0 text-alt-color/20" />
+    <hr class="mx-1 my-0 flex-1 text-alt-color/20" />
   </div>
   <div class="w-full flex flex-wrap justify-center">
     {#each socials as social (social.name)}
