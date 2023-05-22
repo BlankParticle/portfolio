@@ -1,6 +1,7 @@
 <script lang="ts">
   import { flip } from "svelte/animate";
-  import { elasticOut } from "svelte/easing";
+  import { cubicOut } from "svelte/easing";
+
   let skills = [
     {
       name: "HTML",
@@ -63,7 +64,7 @@
   <div class="w-full flex flex-wrap justify-center">
     {#each skills as skill (skill.name)}
       <a
-        animate:flip={{ duration: 1500, easing: (x) => elasticOut(x) }}
+        animate:flip={{ duration: 1500, easing: cubicOut }}
         class="h-28 w-28 flex flex-col cursor-pointer justify-center rounded p-2 text-center text-alt-color decoration-none transition-all hover:bg-accent/10"
         href={skill.site}
         target="_blank"
@@ -77,5 +78,5 @@
       </a>
     {/each}
   </div>
-  <hr class="text-alt-color/20" />
+  <!-- <hr class="text-alt-color/20" /> -->
 </div>
