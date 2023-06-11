@@ -6,7 +6,7 @@
     {
       name: "Mail",
       icon: "i-logos-google-gmail",
-      site: "mailto:blankparticle@gmail.com",
+      site: "mailto:hello@blankparticle.me",
     },
     {
       name: "Github",
